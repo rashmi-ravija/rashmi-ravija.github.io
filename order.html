@@ -87,13 +87,15 @@
             box-sizing: border-box;
         }
 	
-	.center {
-  	margin: auto;
-  	width: 50%;
-  	border: 3px solid green;
- 	 padding: 10px;
+	iframe {
+    height: 200px;
+	display: block;
+    border-style:none;
 	}
+
     </style>
+<script src="assets/js/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -118,19 +120,32 @@
             <label for="message">Message:</label>
             <textarea id="entry.8586157" name="entry.8586157" placeholder="Enter your message with quantity"></textarea>
 
-            <button type="submit" onclick="submitForm()">Submit</button>
+            <button type="submit">Submit</button>
 			<button type="reset">Reset</button>
         </form>
-	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-	<script>
-        function submitForm() {
-            // Display a message (you can customize this message)
-            alert("Thank you for placing your order!");
+
+<iframe name="hidden_iframe" id="hidden_iframe" onload="if(submitted) {}"></iframe>
+
+	<!-- Your custom scripts, including the form submission script -->
+    <script type="text/javascript">
+        var submitted = false;
+
+        // Ensure the document is ready before executing jQuery code
+        $(document).ready(function() {
+            $('#gform').on('submit', function(e) {
+                // Prevent the default form submission
+                e.preventDefault();
+
+			alert("Thank you for placing your order!");
 
             // Redirect to a different page (replace 'your-page.html' with the actual URL)
             window.location.href = 'index.html';
-        }
-    </script></script>
+
+                
+            });
+        });
+    </script>
+
     </main>
 
     <footer>
