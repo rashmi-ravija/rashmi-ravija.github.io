@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+		
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+	
+	.center {
+  	margin: auto;
+  	width: 50%;
+  	border: 3px solid green;
+ 	 padding: 10px;
+	}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Place your order</h1> <br/>
+        <h3><a href="index.html">प्रोफाइल (Profile)</a></h3>
+    </header>
+
+    <main>
+
+
+        <form name="gform", id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeIwCwzxnp2JJV6m-TMKcAKjd0gOZEQYcQojtZ5rCYEflm7fg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <label for="name">Name:</label>
+            <input type="text" id="entry.1218661829" name="entry.1218661829" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="entry.474283797" name="entry.474283797" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="entry.1574594718" name="entry.1574594718" placeholder="Enter either Calendar or Acrylic Painting" required>
+
+            <label for="message">Message:</label>
+            <textarea id="entry.8586157" name="entry.8586157" placeholder="Enter your message with quantity"></textarea>
+
+            <button type="submit" onclick="submitForm()">Submit</button>
+			<button type="reset">Reset</button>
+        </form>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+	<script>
+        function submitForm() {
+            // Display a message (you can customize this message)
+            alert("Thank you for placing your order!");
+
+            // Redirect to a different page (replace 'your-page.html' with the actual URL)
+            window.location.href = 'index.html';
+        }
+    </script></script>
+    </main>
+
+    <footer>
+          &copy; Copyright <strong><span>Rashmi Ravija 2024</span></strong>
+    </footer>
+</body>
+</html>
