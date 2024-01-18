@@ -47,6 +47,7 @@
             display: flex;
             align-items: center;
 			font-size: 18px;
+			text-align: center;
         }
 
         /* Style for the chevron icon */
@@ -86,7 +87,122 @@
             display: flex;
             align-items: center;
         }
+
+		.buy-button {
+		padding: 10px 15px;
+  		font-size: 14px;
+  		font-weight: bold;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		cursor: pointer;
+  		border: 2px solid #3498db;
+  		border-radius: 8px;
+  		background-color: #3498db;
+  		color: #ffffff;
+  		transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+		}
+		
+		#zoom-button{
+		padding: 10px 15px;
+  		font-size: 14px;
+  		font-weight: bold;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		cursor: pointer;
+  		border: 2px solid #3498db;
+  		border-radius: 8px;
+  		background-color: #3498db;
+  		color: #ffffff;
+  		transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+		}
+		
+		.buy-button:hover {
+		background-color: #ffffff;
+		color: #3498db; 
+		border: 2px solid #3498db; 
+		}
+		
+		
+		/* Apply styles to the transparent table */
+		.transparent-table {
+		  border-collapse: collapse;
+		  width: 100%;
+		  font-family: 'Arial', sans-serif;
+		  color: #333;
+		  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+			text-align: center;
+		}
+		
+	/* Apply styles to table rows */
+	.transparent-table tr {
+	  border-bottom: 1px solid #ddd; /* Add a border between rows */
+	 text-align: center;
+	}
+	
+	td {
+  text-align: center;
+}
+	
+	/* Apply styles to table cells */
+	.transparent-table td {
+	  padding: 10px;
+	  display: flex;
+	  align-items: center;
+	  text-align: center;
+	}
+	
+	/* Style for the chevron icon */
+	.bi-chevron-right {
+	  margin-right: 5px;
+	  color: #3498db;
+	}
+	
+	/* Apply styles to links within table cells */
+	.transparent-table a {
+	  text-decoration: none;
+	  color: #3498db;
+	}
+	
+	/* Apply styles to the strong elements */
+	.transparent-table strong {
+	  margin-right: 5px;
+	  font-weight: bold;
+	}
+	
+	/* Define the fade-in animation */
+	@keyframes fadeIn {
+	  from {
+	    opacity: 0;
+	  }
+	  to {
+	    opacity: 1;
+	  }
+	}
+
+		
     </style>
+
+	<script>
+			function place_order() {
+			 window.location.href = "order.html";
+			 }
+			
+			function order_kanch(){
+				window.location.href = "https://www.amazon.in/Kanch-Ke-Shamiyane-Rashmi-Ravija/dp/9384419192/ref=sr_1_1?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-1"
+			
+			}
+			
+			function order_band(){
+			window.location.href = "https://www.flipkart.com/band-darwajon-ka-shahar-rashmi-ravija/p/itmdb61af722af1e?pid=RBKFHDEDYHFGXPTK&lid=LSTRBKFHDEDYHFGXPTK1UV1XR&marketplace=FLIPKART&store=bks&srno=b_1_3&otracker=browse&fm=organic&iid=54e0737c-7d06-4518-8ffa-d243e8000398.RBKFHDEDYHFGXPTK.SEARCH&ppt=None&ppn=None&ssid=ffpw7uv21s0000001705049424624" 
+			}
+			
+			function order_still(){
+			window.location.href = "https://www.amazon.in/STILL-WAITING-YOU-RASHMI-RAVIJA/dp/935500074X/ref=sr_1_2?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-2"
+			}
+			
+	</script>
 
 </head>
 
@@ -151,51 +267,69 @@
             <div class="row">
               <div class="col-lg-6">
 
-		<ul>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>प्रकाशित पुस्तके :</strong>
-            <ul>
-                <li><a href="https://www.amazon.in/Kanch-Ke-Shamiyane-Rashmi-Ravija/dp/9384419192/ref=sr_1_1?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-1">काँच के शामियाने</a> &nbsp (2015)</li>
-                <li><a href="https://www.flipkart.com/band-darwajon-ka-shahar-rashmi-ravija/p/itmdb61af722af1e?pid=RBKFHDEDYHFGXPTK&lid=LSTRBKFHDEDYHFGXPTK1UV1XR&marketplace=FLIPKART&store=bks&srno=b_1_3&otracker=browse&fm=organic&iid=54e0737c-7d06-4518-8ffa-d243e8000398.RBKFHDEDYHFGXPTK.SEARCH&ppt=None&ppn=None&ssid=ffpw7uv21s0000001705049424624">बंद दरवाजों का शहर</a> &nbsp (2018)</li>
-                <li><a href="https://www.amazon.in/STILL-WAITING-YOU-RASHMI-RAVIJA/dp/9355000758">स्टिल वेटिंग फ़ॉर यू</a> &nbsp (2022)</li>
-            </ul>
-        </li>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>ब्लॉग्स :</strong>
-            <ul>
+				<table class="transparent-table">
+				
+				<tr>
+					<td style="font-size: 18px; text-align: center;"><strong>प्रकाशित पुस्तके :</strong></td>
+				</tr>
+				<tr>
+					
+					<td></td>
+				
+					<td>
+						<ol>
+							<li><a href="https://www.amazon.in/Kanch-Ke-Shamiyane-Rashmi-Ravija/dp/9384419192/ref=sr_1_1?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-1">काँच के शामियाने</a> &nbsp (2015)</li>
+				 			<li><a href="https://www.flipkart.com/band-darwajon-ka-shahar-rashmi-ravija/p/itmdb61af722af1e?pid=RBKFHDEDYHFGXPTK&lid=LSTRBKFHDEDYHFGXPTK1UV1XR&marketplace=FLIPKART&store=bks&srno=b_1_3&otracker=browse&fm=organic&iid=54e0737c-7d06-4518-8ffa-d243e8000398.RBKFHDEDYHFGXPTK.SEARCH&ppt=None&ppn=None&ssid=ffpw7uv21s0000001705049424624">बंद दरवाजों का शहर</a> &nbsp (2018)</li>
+							<li><a href="https://www.amazon.in/STILL-WAITING-YOU-RASHMI-RAVIJA/dp/9355000758">स्टिल वेटिंग फ़ॉर यू</a> &nbsp (2022)</li>
+						</ol>
+					</td>
+				</tr>
+				<tr>
+				<td style="font-size: 18px;"><strong>ब्लॉग्स :</strong></td>
+				<td>
+					<ol>
                 <li><a href="https://mankapakhi.blogspot.com/">मन का पाखी</a></li>
                 <li><a href="https://rashmiravija.blogspot.com/">अपनी, उनकी, सबकी बातें</a></li>
-            </ul>
-        </li>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>पुरस्कार :</strong>
-			<ul>
-                <li>महाराष्ट्र राज्य &nbsp<strong>साहित्य अकादमी अवार्ड </strong>&nbsp२०१६-१७ (उपन्यास)</li>
+            </ol></td>
+				
+				</tr>
+				<tr>
+				<td style="font-size: 18px;"><strong>पुरस्कार :</strong></td>
+				<td>
+					<ol>
+                <li>महाराष्ट्र राज्य &nbsp <em>साहित्य अकादमी अवार्ड </em> &nbsp २०१६-१७ (उपन्यास)</li>
                 <li>रीडर्स चॉइस अवार्ड , मातृभारती.कॉम २०२०</li>
-            </ul>
-        </li>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>शहर :</strong>
-            <span>मुंबई, महाराष्ट्र, भारत</span>
-        </li>
-    </ul>
+            </ol>
+				</td>
+				</tr>
+				<tr>
+				<td style="font-size: 18px;"><strong>शहर :</strong></td>
+				<td>
+				<ol>
+            		<li><span>मुंबई, महाराष्ट्र, भारत</span></li>
+				</ol>
+				</td>
+				</tr>
+				<tr>
+				<td style="font-size: 18px;">
+				<strong>ईमेल :</strong>
+				</td>
+				<td>
+				<ol>
+				<li><span><a href="mailto:rashmeeravija26@gmail.com">rashmeeravija26@gmail.com</a></span></li>
+				</ol>
+				</td>
+				</tr>
+				<tr>
+				<td style="font-size:18px"><strong>शिक्षा :</strong> </td>
+				<td>
+				<ol>
+				<li> <span>MA (Political Science)</span></li>
+				</ol>
+				</td>
+				</tr>
+				</table>
 
-    <ul>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>ईमेल :</strong>
-            <span><a href="mailto:rashmeeravija26@gmail.com">rashmeeravija26@gmail.com</a></span>
-        </li>
-        <li>
-            <i class="bi bi-chevron-right"></i>
-            <strong>शिक्षा :</strong>
-            <span>MA (Political Science)</span>
-        </li>
-    </ul>
               </div>
             </div>
             
@@ -219,144 +353,144 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Books</li>
+              <li data-filter=".filter-app">Calendar</li>
               <li data-filter=".filter-card">Paintings</li>
-              <li data-filter=".filter-web">Calendar</li>
+              <li data-filter=".filter-web">Books</li>
             </ul>
           </div>
-	<h4 style="text-align: center;">Click on pictures to see more</h4>
-        </div>
+	        </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="काँच के शामियाने (Books)"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="https://www.amazon.in/Kanch-Ke-Shamiyane-Rashmi-Ravija/dp/9384419192/ref=sr_1_1?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-1" title="Purchase"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
             </div>
+			<center> 
+			<button class="buy-button" onclick="place_order()">Order Now</button> 
+			
+			
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2024 Bird Calendar"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               </div>
-            </div>
+			<center>
+			<button class="buy-button" onclick="order_kanch()">Order Now</button> 
+			
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="बंद दरवाजों का शहर (Books)"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="https://www.flipkart.com/band-darwajon-ka-shahar-rashmi-ravija/p/itmdb61af722af1e?pid=RBKFHDEDYHFGXPTK&lid=LSTRBKFHDEDYHFGXPTK1UV1XR&marketplace=FLIPKART&store=bks&srno=b_1_3&otracker=browse&fm=organic&iid=54e0737c-7d06-4518-8ffa-d243e8000398.RBKFHDEDYHFGXPTK.SEARCH&ppt=None&ppn=None&ssid=ffpw7uv21s0000001705049424624" title="Purchase"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             </div>
+			<center> 
+			
+			<button class="buy-button" onclick="place_order()">Order Now</button> 
+			
+			
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oil Painting by Rashmi in 1999" style="display: inline-block;"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                
-              </div>
+             
             </div>
+			<center>
+			<a class="portfolio-lightbox" href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" id="zoom-button" title="Oil Painting by Rashmi in 1999">Zoom</a>
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2024 Bird Calendar"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
             </div>
+			<center> 
+			
+			<button class="buy-button" onclick="order_band()">Order Now</button> 
+			
+			
+			</center>
+
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="स्टिल वेटिंग फ़ॉर यू (Books)"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="https://www.amazon.in/STILL-WAITING-YOU-RASHMI-RAVIJA/dp/935500074X/ref=sr_1_2?dib=eyJ2IjoiMSJ9.luJ2B3ADHQjJbbhmKItDMWaOW6EN3CZd1kniUyTV0QDGjHj071QN20LucGBJIEps.9srjpQ9dyoqDzkzsZ86g0Qvy0MTROWQYjg4OuXsNexo&dib_tag=se&qid=1705049206&refinements=p_27%3ARashmi+Ravija&s=books&sr=1-2" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
+              
             </div>
+			<center>
+			<button class="buy-button" onclick="order_still()">Buy Now</button>
+			
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oil Painting by Rashmi in October 2000"><i class="glyphicon glyphicon-zoom-in"></i></a>
-               
-              </div>
+              
             </div>
+			<center>
+			<a class="portfolio-lightbox" href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" id="zoom-button" title="Oil Painting by Rashmi in 2000">Zoom</a>
+			</center>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oil Painting by Rashmi in 2002"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                
-              </div>
             </div>
+			<center>
+			 <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Oil Painting by Rashmi in 2002" id="zoom-button"> Zoom</a>
+			</center>
           </div>
 
 		<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">       
             </div>
+			<center>
+			 <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting in 2023 by Rashmi" id="zoom-button"> Zoom</a>
+			</center>
           </div>
 		
 		<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
             </div>
+			<center>
+			 <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023" id="zoom-button"> Zoom</a>
+			</center>
           </div>
 
 		<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
             </div>
+			<center>
+			 <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023" id="zoom-button"> Zoom</a>
+			</center>
           </div>
 			
 		<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023"><i class="glyphicon glyphicon-zoom-in"></i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-              </div>
             </div>
+			<center>
+			 <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023" id="zoom-button"> Zoom</a>
+			</center>
           </div>
 	
 		<div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023"><i class="glyphicon glyphicon-zoom-in"> </i></a>
-                <a href="order.html" title="Place Order"><i class="fa fa-shopping-cart" style="font-size:24px"> </i></a>
-              </div>
             </div>
+		<center>
+			 <a href="assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Acrylic Painting by Rashmi in 2023" id="zoom-button"> Zoom</a>
+			</center>
           </div>
           
 
