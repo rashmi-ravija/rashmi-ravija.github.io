@@ -108,9 +108,6 @@ form {
 
     <main>
 
-	<h4> Please note: You will be contacted via email once you submit the order.</h4>
-
-
         <form name="gform", id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeIwCwzxnp2JJV6m-TMKcAKjd0gOZEQYcQojtZ5rCYEflm7fg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
             <label for="name">Name:</label>
             <input type="text" id="entry.1218661829" name="entry.1218661829" placeholder="Please type your name" required>
@@ -122,10 +119,16 @@ form {
             <input type="text" id="entry.1574594718" name="entry.1574594718" placeholder="Please type either Calendar or Acrylic Painting" required>
 
             <label for="message">Order Message:</label>
+		<p style="font-size: 12px; font-family: 'Arial', sans-serif; color: #333; line-height: 1.5;">
+			Ordering a painting? Please share the painting code and details in the message below.
+		</p>
             <textarea id="entry.8586157" name="entry.8586157" placeholder="Please type your order with quantity"></textarea>
+		<p style="font-size: 12px; font-family: 'Arial', sans-serif; color: #333; line-height: 1.5;">
+		Once you submit your order, we'll reach out to you via email to confirm. Thank you !
+		</p>
 
             <button type="submit">Submit</button>
-			<button type="reset">Reset</button>
+		<button type="reset">Reset</button>
         </form>
 
 <iframe name="hidden_iframe" id="hidden_iframe" onload="if(submitted) {}"></iframe>
